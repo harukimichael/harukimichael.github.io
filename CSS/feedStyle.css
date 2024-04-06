@@ -1,0 +1,156 @@
+/* NAV */
+
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: 'AR One Sans';
+    background-color: rgb(250,250,250);
+}
+
+
+nav {
+    background-color: rgba(0,0,0,1);
+    overflow: hidden;
+    width: 100%
+}
+
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a.active {
+    background-color: teal;
+}
+
+/* HEADER */
+
+header {
+    padding-bottom: 50px;
+}
+
+header div.scroll-container img {
+    padding: 0;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.4);
+    height: 300px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    transition: height 2s, margin-top 2s, margin-bottom 2s, box-shadow 2s;
+    
+}
+
+div.scroll-container {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+/* MAIN */
+
+main {
+   
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.posts {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+div.card {
+    background-color: white;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2);
+    height: 1150px;
+    width: 900px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+}
+
+div.card img {
+    height: 900px;
+    width: 900px;
+    padding: 0;
+    margin: 0;
+}
+
+div.textContent {
+    padding: 7px 21px;
+}
+
+div.profilePhoto {
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+div.profilePhoto img{
+    height: 70px;
+    width: 70px;
+}
+
+div.portfolio {
+    display: flex;
+}
+
+div.portfolio h3{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+
+/* TRANSITION */
+
+header div.scroll-container img:hover {
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 40px 40px 0 rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 950px) {
+    main {
+        width: 100%;
+    }
+
+    main h1 {
+        margin: 15px;
+    }
+    
+   
+    div.card {
+        height: auto;
+        width: 100%;             
+    }
+    
+    div.card img {
+        height: auto;
+        width: 100%;
+    }
+    
+   
+    div.profilePhoto {
+        margin: 5px;
+    }
+
+    header div.scroll-container img:hover {
+        height: 300px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2);
+    }
+}
